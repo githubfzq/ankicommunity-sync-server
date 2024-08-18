@@ -2,7 +2,6 @@ FROM python:3.10-slim
 
 COPY src /src
 RUN cd /src \
-&& pip install -r requirements.txt \
 && pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt \
 && pip install -e .
 
